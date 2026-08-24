@@ -1,0 +1,29 @@
+config_version=5
+
+[application]
+config/name="WorldWarII — Battle Doctrine (record)"
+run/main_scene="res://record.tscn"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+AppTheme="*res://scripts/autoload/app_theme.gd"
+DataLoader="*res://scripts/autoload/data_loader.gd"
+GameState="*res://scripts/autoload/game_state.gd"
+AudioBank="*res://scripts/autoload/audio_bank.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[gui]
+
+theme/custom_font="res://assets/fonts/NotoSansCJKtc-Regular.otf"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

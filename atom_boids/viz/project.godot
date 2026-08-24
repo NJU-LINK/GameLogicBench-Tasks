@@ -1,0 +1,13 @@
+config_version=5
+
+[application]
+config/name="geb_atom_boids_record"
+run/main_scene="res://record.tscn"
+config/features=PackedStringArray("4.4")
+
+[display]
+window/size/viewport_width=960
+window/size/viewport_height=640
+
+[physics]
+2d/run_on_separate_thread=false

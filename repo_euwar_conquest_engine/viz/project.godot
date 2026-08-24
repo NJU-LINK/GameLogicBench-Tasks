@@ -1,0 +1,33 @@
+; repo_euwar_conquest_engine -- viz/record project (windowed, Movie Maker).
+; Overlaid last at record time. Keeps the game's own CJK theme so the real
+; strategic map renders with its original look.
+
+config_version=5
+
+[application]
+
+config/name="Eu-War-Conquest-Record"
+run/main_scene="res://record.tscn"
+config/features=PackedStringArray("4.4")
+
+[autoload]
+
+AppTheme="*res://scripts/autoload/app_theme.gd"
+DataLoader="*res://scripts/autoload/data_loader.gd"
+GameState="*res://scripts/autoload/game_state.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[gui]
+
+theme/custom_font="res://assets/fonts/NotoSansCJKtc-Regular.otf"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
